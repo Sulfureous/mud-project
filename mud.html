@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+ 
+<html>
+ 
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mud Project</title>
+    <link href="css/lib/mud.css" type="text/css" rel="stylesheet" media="screen">
+    
+    <style>
+      /* These Styles are ONLY this demo */
+	  #fluidCont .colOne,
+	  #fluidCont .colTwo,
+	  #fluidCont .colThree,
+	  #fluidCont .colFour,
+	  #fluidCont .colFive,
+	  #fluidCont .colSix,
+	  #fluidCont .colSeven,
+	  #fluidCont .colEight,
+	  #fluidCont .colNine,
+	  #fluidCont .colTen,
+	  #fluidCont .colEleven,
+	  #fluidCont .colTwelve {
+		background: rgba(0,0,0,0.1);
+		border-radius: 3px;
+	  }
+	</style>
+    
+  </head>
+ 
+  <body>
+  
+  <div class="cont">
+        
+    <div class="row">
+    
+      <div class="colFour">
+        <div class="boxed posFixed">
+          <h2>Mud Project Examples</h2>
+          <ol>
+            <li><a href="#mainNavAlignment">Alignment</a></li>
+            <li><a href="#mainNavButtons">Buttons</a></li>
+            <li><a href="#mainNavFluidGrid">Fluid Grid</a></li>
+            <li><a href="#mainNavForms">Forms</a></li>
+            <li><a href="#mainNavHr">Horizontal Rulers</a></li>
+            <li><a href="#mainNavLists">Lists</a></li>
+            <li><a href="#mainNavSysMsg">System Messages</a></li>
+            <li><a href="#mainNavTypography">Typography</a></li>
+          </ol>
+        </div><!--.boxed .posFixed-->
+      </div><!--.colFour-->
+      
+      <div class="colEight">
+
+        <h1 class="alignRight">Mud Project <small>version 1.0</small></h1>
+        <strong>A CSS and JavaScript Simple Framework</strong>
+        
+        <p>Below is a very simple list of how things look on the stock Mud Project framework. Please be patient and wait for the documentation as it's in progress. Meanwhile just go ahead and view the source to look at the action under the hood.</p>
+        <p>Go ahead and view the source code to copy this HTML file and setup your working environment locally.</p>
+        
+        <hr class="hr">
+        <!-- ALIGNMENT -->
+
+        <h2 id="mainNavAlignment">Text Alignment</h2>
+        <p>Text normal alignment and vertical aligment</p>
+        
+        <div class="boxer">
+          <p class="alignLeft">Text simple text is aligned to the left.</p>
+          <p class="alignCenter">Text text is on the center.</p>
+          <p class="alignRight">Text bit of text is aligned to the right.</p>
+        </div><!--.boxer-->
+    
+        <hr class="hr">        
+        <!-- BUTTONS -->
+
+        <h2 id="mainNavButtons">Buttons</h2>
+        <p>Button Styles and Sizes. These will come in 3 sizes and they will be available in different flavors as well to communicate other messages such as warning, delete or what not kind of buttons.</p>
+      
+        <small class="fontItalic">Example:</small>
+        <div class="boxer">
+          <p><a href="" class="btn btnSmall">Small Button</a></p>
+          <p><a href="" class="btn">Normal Button</a></p>
+          <p><a href="" class="btn btnLarge">Large Button</a></p>
+          <p><a href="" class="btn btnPrimary">Primary Button</a></p>
+          <p><a href="" class="btn btnWarning">Warning Button</a></p>
+          <p><a href="" class="btn btnDanger">Danger Button</a></p>
+          <p><a href="" class="btn btnSuccess">Success Button</a></p>
+        </div><!--.boxer-->
+      
+        <hr class="hr">
+        <!-- FLUID GRID -->
+        
+        <h2 id="mainNavFluidGrid">Fluid Grid</h2>
+        <p>This grid layout is based on a 960px width design broken into nice even numbers with margins. As some of you might be aware, % based layouts are not 100% perfect in all browsers so this might look good here but might suck in Mobile Safari by not aligning properly like it should.</p>
+        
+        <small class="fontItalic">Example:</small>
+        <div class="boxer alignCenter" id="fluidCont">
+          <div class="row">
+            <div class="colOne">1</div>
+            <div class="colOne">1</div>
+            <div class="colOne">1</div>
+            <div class="colOne">1</div>
+            <div class="colOne">1</div>
+            <div class="colOne">1</div>
+            <div class="colOne">1</div>
+            <div class="colOne">1</div>
+            <div class="colOne">1</div>
+            <div class="colOne">1</div>
+            <div class="colOne">1</div>
+            <div class="colOne">1</div>
+          </div><!--.row-->
+    
+          <div class="row">
+            <div class="colTwo">2</div>
+            <div class="colTwo">2</div>
+            <div class="colTwo">2</div>
+            <div class="colTwo">2</div>
+            <div class="colTwo">2</div>
+            <div class="colTwo">2</div>
+          </div><!--.row-->
+    
+          <div class="row">
+            <div class="colThree">3</div>
+            <div class="colThree">3</div>
+            <div class="colThree">3</div>
+            <div class="colThree">3</div>
+          </div><!--.row-->
+    
+          <div class="row">
+            <div class="colFour">4</div>
+            <div class="colFour">4</div>
+            <div class="colFour">4</div>
+          </div><!--.row-->
+    
+          <div class="row">
+            <div class="colSix">6</div>
+            <div class="colSix">6</div>
+          </div><!--.row-->
+    
+          <div class="row">
+            <div class="colTwelve">12</div>
+          </div><!--.row-->
+          
+        </div><!--.boxer-->
+
+        <hr class="hr">
+        <!-- FORMS -->
+
+        <h2 id="mainNavForms">Forms</h2>
+        <p>Basic Styles for forms, at least something nicer than stock from browsers. Note that the forms support the most common new field types such as URL, Search, etc.</p>
+        
+        <small class="fontItalic">Example:</small>
+        
+        <div class="boxer">
+          <form action="#" class="form">
+            <ul>
+              <li>
+                <label>Text:</label>
+                <input type="text" placeholder="This is an input type Text">
+              </li>
+              <li>
+                <label>Email:</label>
+                <input type="email" placeholder="Input type for Email Address">
+              </li>
+              <li>
+                <label>Password:</label>
+                <input type="password" placeholder="Password input type">
+              </li>
+              <li>
+                <label>URL:</label>
+                <input type="url" placeholder="Input type URL">
+              </li>
+              <li>
+                <label>Tel:</label>
+                <input type="tel" placeholder="Input type for Telephones">
+              </li>
+              <li>
+                <label>Search:</label>
+                <input type="search" placeholder="Search box input type">
+              </li>
+            </ul>
+          </form>
+        </div><!--.boxer-->
+
+        <hr class="hr">
+        <!-- HORIZONTAL RULES -->
+
+        <h2 id="mainNavHr">Horizontal Rules</h2>
+        <p>These come in 4 sizes ranging from Full to Small. They are made with CSS gradients so they blend nice to your background with the alpha set to 0 on the edges</p>
+        
+        <small class="fontItalic">Output Example:</small>
+        <div class="boxer">
+          <hr class="hr hrLarge">
+          <hr class="hr hrMedium">
+          <hr class="hr hrSmall">          
+          <hr class="hr">
+          
+          <div class="boxer">
+            <small class="fontItalic">Markup Example:</small>
+            <pre>
+              <code class="codeIt hide"> 
+<hr class="hr hrLarge">
+<hr class="hr hrMedium">
+<hr class="hr hrSmall">
+<hr class="hr">
+              </code>
+            </pre>
+          </div><!--.boxer-->
+          
+        </div><!--.boxer-->
+
+        <hr class="hr">
+        <!-- LISTS -->
+
+        <h2 id="mainNavLists">Lists</h2>
+        <p>Unordered, Ordered and Definition Lists. These three types of lists are ready for normal use with a bit of margin on the left and on the bottom.</p>
+    
+        <small class="fontItalic">Example:</small>
+        <div class="boxer">    
+          <dl>
+            <dt>Definition Term</dt>
+            <dd>Notice these are a little indented like the bullets so the definitions pop out a bit better than their default look.</dd>
+          </dl>
+          
+          <ol>
+            <li>Ordered List 01</li>
+            <li>Ordered List 02</li>
+            <li>Ordered List 03</li>
+          </ol>
+          
+          <ul>
+            <li class="listCircle">List Item with a Circle</li>
+            <li class="listDisc">List Item with a Disc</li>
+            <li class="listSquare">List Item with a Square</li>
+          </ul>
+
+          <hr class="hr">
+          
+          <div class="boxer">
+            <small class="fontItalic">Markup Example:</small>
+            <pre>
+              <code class="codeIt hide"> 
+<dl>
+  <dt>Definition Term</dt>
+  <dd>Notice these are a little indented like the bullets so the definitions pop out a bit better than their default look.</dd>
+</dl>
+
+<ol>
+  <li>Ordered List 01</li>
+  <li>Ordered List 02</li>
+  <li>Ordered List 03</li>
+</ol>
+
+<ul>
+  <li class="listCircle">List Item with a Circle</li>
+  <li class="listDisc">List Item with a Disc</li>
+  <li class="listSquare">List Item with a Square</li>
+</ul>
+              </code>
+            </pre>
+          </div><!--.boxer-->
+
+        </div><!--.boxer-->
+        
+        <hr class="hr">
+        <!-- SYSTEM MESSAGES -->
+
+        <h2 id="mainNavSysMsg">System Messages</h2>
+        <p>These come in a couple of flavors and in two styles... a block style where you can use them in your document flow or a fixed and centered on the top of your window area. They are animated to appear and disappear with a combination of jQuery and CSS3 animations.</p>
+        
+        <small class="fontItalic">Example:</small>
+        <div class="boxer">
+          <div class="sysMsg normal">
+            <div class="close">X</div>
+            <p>This is a normal system message.</p>
+            <p>It can contain multiple paragraphs or just <strong>one</strong></p>
+          </div>
+          <div class="sysMsg warning">
+            <div class="close">X</div>
+            <p>This is a warning system message. This is used to warn people and stuff.</p>
+          </div>
+          <div class="sysMsg error">
+            <div class="close">X</div>
+            <p>This is an error system message in one line... usually causes some frustration.</p>
+          </div>
+          <div class="sysMsg success">
+            <div class="close">X</div>
+            <p>This is a successful system message. People's hearts continue beating when they see this come up.</p>
+          </div>
+        </div><!--.boxer-->
+    
+        <hr class="hr">
+        <!-- TYPOGRAPHY -->
+
+        <h2 id="mainNavTypography">Typography</h2>
+        <p>All heading tags from 1 to 6. They have 20px margin at the bottom for a clean separation and no margin on the top so they align with things at the top.</p>
+        <p>There are some other interesting styles I am adding to typography such as.... <strong>(editing)</strong></p>
+        
+        <small class="fontItalic">Output Example:</small>
+        <div class="boxer">
+          <h1>Heading 1</h1>
+          <h2>Heading 2</h2>
+          <h3>Heading 3</h3>
+          <h4>Heading 4</h4>
+          <h5>Heading 5</h5>
+          <h6>Heading 6</h6>
+          
+          <hr class="hr">
+          
+          <div class="boxer">
+            <small class="fontItalic">Markup Example:</small>
+            <pre>
+              <code class="codeIt hide"> 
+<h1>Heading 1</h1>
+<h2>Heading 2</h2>
+<h3>Heading 3</h3>
+<h4>Heading 4</h4>
+<h5>Heading 5</h5>
+<h6>Heading 6</h6>
+              </code>
+            </pre>
+          </div><!--.boxer-->
+          
+        </div><!--.boxer-->
+
+      </div><!--.colEight-->
+    </div><!--.row-->
+    
+  </div><!--.cont-->
+  
+  <!--Here we go with the scripts!-->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script src="js/lib/mud.js"></script>
+  
+  </body>
+ 
+</html>
