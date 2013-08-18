@@ -10,18 +10,18 @@
     
     <style>
       /* These Styles are ONLY this demo */
-	  #fluidCont .col1,
-	  #fluidCont .col2,
-	  #fluidCont .col3,
-	  #fluidCont .col4,
-	  #fluidCont .col5,
-	  #fluidCont .col6,
-	  #fluidCont .col7,
-	  #fluidCont .col8,
-	  #fluidCont .col9,
-	  #fluidCont .col10,
-	  #fluidCont .col11,
-	  #fluidCont .col12 {
+	  .fluidCont .col1,
+	  .fluidCont .col2,
+	  .fluidCont .col3,
+	  .fluidCont .col4,
+	  .fluidCont .col5,
+	  .fluidCont .col6,
+	  .fluidCont .col7,
+	  .fluidCont .col8,
+	  .fluidCont .col9,
+	  .fluidCont .col10,
+	  .fluidCont .col11,
+	  .fluidCont .col12 {
 		background: rgba(0,0,0,0.1);
 		border-radius: 3px;
 	  }
@@ -62,30 +62,53 @@
         <hr class="hr">
         <!-- ALIGNMENT -->
 
-        <h2 id="mainNavAlignment">Text Alignment</h2>
+        <h2 id="mainNavAlignment">Alignment</h2>
         <p>Text normal alignment and vertical aligment</p>
         
+        <small class="fontItalic">Output Example:</small>
         <div class="boxer">
           <p class="alignLeft">Text simple text is aligned to the left.</p>
           <p class="alignCenter">Text text is on the center.</p>
           <p class="alignRight">Text bit of text is aligned to the right.</p>
+          
+          <div class="boxer">
+            <small class="fontItalic">Markup Example:</small>
+            <pre><code class="codeIt hide"> 
+<p class="alignLeft">Text simple text is aligned to the left.</p>
+<p class="alignCenter">Text text is on the center.</p>
+<p class="alignRight">Text bit of text is aligned to the right.</p>
+            </code></pre>
+          </div><!--.boxer-->
+          
         </div><!--.boxer-->
-    
-        <hr class="hr">        
+
+        <hr class="hr">
         <!-- BUTTONS -->
 
         <h2 id="mainNavButtons">Buttons</h2>
         <p>Button Styles and Sizes. These will come in 3 sizes and they will be available in different flavors as well to communicate other messages such as warning, delete or what not kind of buttons.</p>
       
-        <small class="fontItalic">Example:</small>
+        <small class="fontItalic">Output Example:</small>
         <div class="boxer">
           <p><a href="" class="btn btnSmall">Small Button</a></p>
           <p><a href="" class="btn">Normal Button</a></p>
           <p><a href="" class="btn btnLarge">Large Button</a></p>
-          <p><a href="" class="btn btnPrimary">Primary Button</a></p>
           <p><a href="" class="btn btnWarning">Warning Button</a></p>
           <p><a href="" class="btn btnDanger">Danger Button</a></p>
           <p><a href="" class="btn btnSuccess">Success Button</a></p>
+          
+          <div class="boxer">
+            <small class="fontItalic">Markup Example:</small>
+          	<pre><code class="codeIt hide">
+<a href="#" class="btn btnSmall">Small Button</a>
+<a href="#" class="btn">Normal Button</a>
+<a href="#" class="btn btnLarge">Large Button</a>
+<a href="#" class="btn btnWarning">Warning Button</a>
+<a href="#" class="btn btnDanger">Danger Button</a>
+<a href="#" class="btn btnSuccess">Success Button</a>
+            </code></pre>
+          </div><!--.boxer-->
+          
         </div><!--.boxer-->
       
         <hr class="hr">
@@ -94,9 +117,9 @@
         <h2 id="mainNavFluidGrid">Fluid Grid</h2>
         <p>This grid layout is based on a 960px width design broken into nice even numbers with margins. As some of you might be aware, % based layouts are not 100% perfect in all browsers so this might look good here but might suck in Mobile Safari by not aligning properly like it should.</p>
         
-        <small class="fontItalic">Example:</small>
-        <div class="boxer alignCenter" id="fluidCont">
-          <div class="row">
+        <small class="fontItalic">Output Example:</small>
+        <div class="boxer fluidCont">
+          <div class="row alignCenter">
             <div class="col1">1</div>
             <div class="col1">1</div>
             <div class="col1">1</div>
@@ -111,7 +134,7 @@
             <div class="col1">1</div>
           </div><!--.row-->
     
-          <div class="row">
+          <div class="row alignCenter">
             <div class="col2">2</div>
             <div class="col2">2</div>
             <div class="col2">2</div>
@@ -120,27 +143,78 @@
             <div class="col2">2</div>
           </div><!--.row-->
     
-          <div class="row">
+          <div class="row alignCenter">
             <div class="col3">3</div>
             <div class="col3">3</div>
             <div class="col3">3</div>
             <div class="col3">3</div>
           </div><!--.row-->
     
-          <div class="row">
+          <div class="row alignCenter">
             <div class="col4">4</div>
             <div class="col4">4</div>
             <div class="col4">4</div>
           </div><!--.row-->
     
-          <div class="row">
+          <div class="row alignCenter">
             <div class="col6">6</div>
             <div class="col6">6</div>
           </div><!--.row-->
     
-          <div class="row">
+          <div class="row alignCenter">
             <div class="col12">12</div>
           </div><!--.row-->
+          
+          <div class="boxer">
+            <small class="fontItalic">Markup Example:</small>
+          	<pre><code class="codeIt hide">
+<div class="row">
+  <div class="col1">1</div>
+  <div class="col1">1</div>
+  <div class="col1">1</div>
+  <div class="col1">1</div>
+  <div class="col1">1</div>
+  <div class="col1">1</div>
+  <div class="col1">1</div>
+  <div class="col1">1</div>
+  <div class="col1">1</div>
+  <div class="col1">1</div>
+  <div class="col1">1</div>
+  <div class="col1">1</div>
+</div>
+
+<div class="row">
+  <div class="col2">2</div>
+  <div class="col2">2</div>
+  <div class="col2">2</div>
+  <div class="col2">2</div>
+  <div class="col2">2</div>
+  <div class="col2">2</div>
+</div>
+
+<div class="row">
+  <div class="col3">3</div>
+  <div class="col3">3</div>
+  <div class="col3">3</div>
+  <div class="col3">3</div>
+</div>
+
+<div class="row">
+  <div class="col4">4</div>
+  <div class="col4">4</div>
+  <div class="col4">4</div>
+</div>
+
+<div class="row">
+  <div class="col6">6</div>
+  <div class="col6">6</div>
+</div>
+
+<div class="row">
+  <div class="col12">12</div>
+</div>
+            </code></pre>
+          </div><!--.boxer-->
           
         </div><!--.boxer-->
 
@@ -150,7 +224,7 @@
         <h2 id="mainNavForms">Forms</h2>
         <p>Basic Styles for forms, at least something nicer than stock from browsers. Note that the forms support the most common new field types such as URL, Search, etc.</p>
         
-        <small class="fontItalic">Example:</small>
+        <small class="fontItalic">Output Example:</small>
         
         <div class="boxer">
           <form action="#" class="form">
@@ -181,6 +255,41 @@
               </li>
             </ul>
           </form>
+          
+          <div class="boxer">
+          	<small class="fontItalic">Markup Example</small>
+          	<pre><code class="codeIt hide">
+<form action="#" class="form">
+  <ul>
+    <li>
+      <label>Text:</label>
+      <input type="text" placeholder="This is an input type Text">
+    </li>
+    <li>
+      <label>Email:</label>
+      <input type="email" placeholder="Input type for Email Address">
+    </li>
+    <li>
+      <label>Password:</label>
+      <input type="password" placeholder="Password input type">
+    </li>
+    <li>
+      <label>URL:</label>
+      <input type="url" placeholder="Input type URL">
+    </li>
+    <li>
+      <label>Tel:</label>
+      <input type="tel" placeholder="Input type for Telephones">
+    </li>
+    <li>
+      <label>Search:</label>
+      <input type="search" placeholder="Search box input type">
+    </li>
+  </ul>
+</form>
+            </code></pre>
+          </div><!--.boxer-->
+          
         </div><!--.boxer-->
 
         <hr class="hr">
@@ -198,14 +307,12 @@
           
           <div class="boxer">
             <small class="fontItalic">Markup Example:</small>
-            <pre>
-              <code class="codeIt hide"> 
+            <pre><code class="codeIt hide"> 
 <hr class="hr hrLarge">
 <hr class="hr hrMedium">
 <hr class="hr hrSmall">
 <hr class="hr">
-              </code>
-            </pre>
+            </code></pre>
           </div><!--.boxer-->
           
         </div><!--.boxer-->
@@ -239,8 +346,7 @@
           
           <div class="boxer">
             <small class="fontItalic">Markup Example:</small>
-            <pre>
-              <code class="codeIt hide"> 
+            <pre><code class="codeIt hide"> 
 <dl>
   <dt>Definition Term</dt>
   <dd>Notice these are a little indented like the bullets so the definitions pop out a bit better than their default look.</dd>
@@ -257,8 +363,7 @@
   <li class="listDisc">List Item with a Disc</li>
   <li class="listSquare">List Item with a Square</li>
 </ul>
-              </code>
-            </pre>
+            </code></pre>
           </div><!--.boxer-->
 
         </div><!--.boxer-->
@@ -276,18 +381,48 @@
             <p>This is a normal system message.</p>
             <p>It can contain multiple paragraphs or just <strong>one</strong></p>
           </div>
+          
           <div class="sysMsg warning">
             <div class="close">X</div>
             <p>This is a warning system message. This is used to warn people and stuff.</p>
           </div>
-          <div class="sysMsg error">
+          
+          <div class="sysMsg danger">
             <div class="close">X</div>
-            <p>This is an error system message in one line... usually causes some frustration.</p>
+            <p>This is an danger system message in one line... usually causes some frustration.</p>
           </div>
+          
           <div class="sysMsg success">
             <div class="close">X</div>
             <p>This is a successful system message. People's hearts continue beating when they see this come up.</p>
           </div>
+          
+          <div class="boxer">
+          	<small class="fontItalic">Markup Example</small>
+          	<pre><code class="codeIt hide">
+<div class="sysMsg normal">
+  <div class="close">X</div>
+  <p>This is a normal system message.</p>
+  <p>It can contain multiple paragraphs or just <strong>one</strong></p>
+</div>
+
+<div class="sysMsg warning">
+  <div class="close">X</div>
+  <p>This is a warning system message. This is used to warn people and stuff.</p>
+</div>
+
+<div class="sysMsg error">
+  <div class="close">X</div>
+  <p>This is an danger system message in one line... usually causes some frustration.</p>
+</div>
+
+<div class="sysMsg success">
+  <div class="close">X</div>
+  <p>This is a successful system message. People's hearts continue beating when they see this come up.</p>
+</div>
+            </code></pre>
+          </div><!--.boxer-->
+          
         </div><!--.boxer-->
     
         <hr class="hr">
@@ -310,16 +445,14 @@
           
           <div class="boxer">
             <small class="fontItalic">Markup Example:</small>
-            <pre>
-              <code class="codeIt hide"> 
+            <pre><code class="codeIt hide"> 
 <h1>Heading 1</h1>
 <h2>Heading 2</h2>
 <h3>Heading 3</h3>
 <h4>Heading 4</h4>
 <h5>Heading 5</h5>
 <h6>Heading 6</h6>
-              </code>
-            </pre>
+            </code></pre>
           </div><!--.boxer-->
           
         </div><!--.boxer-->
