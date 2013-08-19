@@ -29,7 +29,7 @@
     
   </head>
  
-  <body>
+  <body id="home">
   
   <div class="cont">
         
@@ -39,6 +39,7 @@
         <div class="boxed posFixed">
           <h2>Mud Project Examples</h2>
           <ol>
+            <li><a href="#home">Home</a></li>
             <li><a href="#mainNavAlignment">Alignment</a></li>
             <li><a href="#mainNavButtons">Buttons</a></li>
             <li><a href="#mainNavFluidGrid">Fluid Grid</a></li>
@@ -53,7 +54,7 @@
       
       <div class="col8">
 
-        <h1 class="alignRight">Mud Project <small>version 1.0.1</small></h1>
+        <h1 class="alignRight">Mud Project <small>version 1.0.2</small></h1>
         <strong>A CSS and JavaScript Simple Framework</strong>
         
         <p>Below is a very simple list of how things look on the stock Mud Project framework. Please be patient and wait for the documentation as it's in progress. Meanwhile just go ahead and view the source to look at the action under the hood.</p>
@@ -77,6 +78,12 @@
 <p class="alignLeft">Text simple text is aligned to the left.</p>
 <p class="alignCenter">Text text is on the center.</p>
 <p class="alignRight">Text bit of text is aligned to the right.</p>
+            </code></pre>
+            <small class="fontItalic">Emmet Abbreviation</small>
+            <pre><code>
+p.alignLeft
+p.alignCenter
+p.alignRight
             </code></pre>
           </div><!--.boxer-->
           
@@ -106,6 +113,15 @@
 <a href="#" class="btn btnWarning">Warning Button</a>
 <a href="#" class="btn btnDanger">Danger Button</a>
 <a href="#" class="btn btnSuccess">Success Button</a>
+            </code></pre>
+            <small class="fontItalic">Emmet Abbreviation</small>
+            <pre><code>
+a.btn.btnSmall{Small Button}
+a.btn{Normal Button}
+a.btn.btnLarge{Large Button}
+a.btn.btnWarning{Warning Button}
+a.btn.btnDanger{Danger Button}
+a.btn.btnSuccess{Success Button}
             </code></pre>
           </div><!--.boxer-->
           
@@ -214,6 +230,15 @@
   <div class="col12">12</div>
 </div>
             </code></pre>
+            <small class="fontItalic">Emmet Abbreviation</small>
+            <pre><code>
+div.row>div.col1{$}*12
+div.row>div.col2{$}*6
+div.row>div.col3{$}*4
+div.row>div.col4{$}*3
+div.row>div.col6{$}*2
+div.row>div.col12{12}
+            </code></pre>
           </div><!--.boxer-->
           
         </div><!--.boxer-->
@@ -288,6 +313,10 @@
   </ul>
 </form>
             </code></pre>
+            <small class="fontItalic">Emmet Abbreviation</small>
+            <pre><code>
+form.form>ul>li*6>label{Field $}+input[type="" placeholder="Field $"]
+            </code></pre>
           </div><!--.boxer-->
           
         </div><!--.boxer-->
@@ -313,6 +342,13 @@
 <hr class="hr hrSmall">
 <hr class="hr">
             </code></pre>
+            <small class="fontItalic">Emmet Abbreviation</small>
+            <pre><code>
+hr.hr.hrLarge
+hr.hr.hrMedium
+hr.hr.hrSmall
+hr.hr
+            </code></pre>
           </div><!--.boxer-->
           
         </div><!--.boxer-->
@@ -323,7 +359,7 @@
         <h2 id="mainNavLists">Lists</h2>
         <p>Unordered, Ordered and Definition Lists. These three types of lists are ready for normal use with a bit of margin on the left and on the bottom.</p>
     
-        <small class="fontItalic">Example:</small>
+        <small class="fontItalic">Output Example:</small>
         <div class="boxer">    
           <dl>
             <dt>Definition Term</dt>
@@ -364,6 +400,14 @@
   <li class="listSquare">List Item with a Square</li>
 </ul>
             </code></pre>
+            <small class="fontItalic">Emmet Abbreviation</small>
+            <pre><code>
+dl>dt+dd
+ol>li{Ordered List $$}*3
+ul>li.listCircle
+ul>li.listDisc
+ul>li.listSquare
+            </code></pre>
           </div><!--.boxer-->
 
         </div><!--.boxer-->
@@ -374,7 +418,7 @@
         <h2 id="mainNavSysMsg">System Messages</h2>
         <p>These come in a couple of flavors and in two styles... a block style where you can use them in your document flow or a fixed and centered on the top of your window area. They are animated to appear and disappear with a combination of jQuery and CSS3 animations.</p>
         
-        <small class="fontItalic">Example:</small>
+        <small class="fontItalic">Output Example:</small>
         <div class="boxer">
           <div class="sysMsg normal">
             <div class="close">X</div>
@@ -401,25 +445,32 @@
           	<small class="fontItalic">Markup Example</small>
           	<pre><code class="codeIt hide">
 <div class="sysMsg normal">
-  <div class="close">X</div>
+  <div class="close">x</div>
   <p>This is a normal system message.</p>
   <p>It can contain multiple paragraphs or just <strong>one</strong></p>
 </div>
 
 <div class="sysMsg warning">
-  <div class="close">X</div>
+  <div class="close">x</div>
   <p>This is a warning system message. This is used to warn people and stuff.</p>
 </div>
 
-<div class="sysMsg error">
-  <div class="close">X</div>
+<div class="sysMsg danger">
+  <div class="close">x</div>
   <p>This is an danger system message in one line... usually causes some frustration.</p>
 </div>
 
 <div class="sysMsg success">
-  <div class="close">X</div>
+  <div class="close">x</div>
   <p>This is a successful system message. People's hearts continue beating when they see this come up.</p>
 </div>
+            </code></pre>
+            <small class="fontItalic">Emmet Abbreviation</small>
+            <pre><code>
+div.sysMsg.normal>div.close{x}+p
+div.sysMsg.warning>div.close{x}+p
+div.sysMsg.danger>div.close{x}+p
+div.sysMsg.success>div.close{x}+p
             </code></pre>
           </div><!--.boxer-->
           
@@ -430,7 +481,6 @@
 
         <h2 id="mainNavTypography">Typography</h2>
         <p>All heading tags from 1 to 6. They have 20px margin at the bottom for a clean separation and no margin on the top so they align with things at the top.</p>
-        <p>There are some other interesting styles I am adding to typography such as.... <strong>(editing)</strong></p>
         
         <small class="fontItalic">Output Example:</small>
         <div class="boxer">
@@ -452,6 +502,15 @@
 <h4>Heading 4</h4>
 <h5>Heading 5</h5>
 <h6>Heading 6</h6>
+            </code></pre>
+            <small class="fontItalic">Emmet Abbreviation</small>
+            <pre><code>
+h1
+h2
+h3
+h4
+h5
+h6
             </code></pre>
           </div><!--.boxer-->
           
